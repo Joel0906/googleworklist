@@ -45,6 +45,21 @@
 					<Column id="nameColumn">
 						<Text text="{i18n>tableNameColumnTitle}" id="nameColumnTitle"/>
 					</Column>
+					<Column>
+						<Text text="{i18n>columnTitle2}"></Text>
+					</Column>
+					<Column>
+						<Text text="{i18n>columnTitle3}"></Text>
+					</Column>
+					<Column>
+						<Text text="{i18n>columnTitle4}"></Text>
+					</Column>
+					<Column>
+						<Text text="{i18n>columnTitle5}"></Text>
+					</Column>
+					<Column>
+						<Text text="{i18n>columnTitle6}"></Text>
+					</Column>
 				</columns>
 
 				<items>
@@ -54,6 +69,16 @@
 						<cells>
 							<ObjectIdentifier
 								title="{TorId}"/>
+
+							<ObjectIdentifier
+								title="{SrcLoc}"/>
+
+							<ObjectIdentifier
+								title="{DestLoc}"/>
+							<ObjectIdentifier
+								title="{path : 'PickupDate', formatter : '.date.dateFormat'}"/>
+							<ObjectIdentifier
+								title="{path : 'DelivDate', formatter : '.date.dateFormat'}"/>
 						</cells>
 					</ColumnListItem>
 				</items>

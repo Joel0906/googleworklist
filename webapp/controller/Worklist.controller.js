@@ -4,8 +4,9 @@ sap.ui.define([
 		"sap/ui/core/routing/History",
 		"google/model/formatter",
 		"sap/ui/model/Filter",
-		"sap/ui/model/FilterOperator"
-	], function (BaseController, JSONModel, History, formatter, Filter, FilterOperator) {
+		"sap/ui/model/FilterOperator",
+		"google/utils/transform"
+	], function (BaseController, JSONModel, History, formatter, Filter, FilterOperator, transform) {
 		"use strict";
 
 		return BaseController.extend("google.controller.Worklist", {
@@ -52,6 +53,8 @@ sap.ui.define([
 					oViewModel.setProperty("/tableBusyDelay", iOriginalBusyDelay);
 				});
 			},
+			
+			date : transform,
 
 			/* =========================================================== */
 			/* event handlers                                              */
